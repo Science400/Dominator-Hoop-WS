@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="author" content="Stéphane Calderoni">
+    <meta name="description" content="Dominator Hoop Cycle Testing with WebSocket">
+    <title>Dominator Hoop Cycle Testing</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="/bootstrap.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="index.css"> -->
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Dominator Hoop Cycle Testing</h1>
+        <div class="container" id="cyclesInput">
+            <label for="cycleQuantity">Cycle Quantity</label>
+            <input type="number" id="cycleQuantity" name="cycleQuantity" min="1">
+            <button class="btn btn-success" id="startButton">Start</button>
+        </div>
+        <div class="container d-none" id="cyclesOutput">
+            <p>Cycles Completed: <span id="cyclesCompletedSpan">1234</span> / <span id="cyclesInitialSpan"></span></p>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" id="progress-bar"
+                    role="progressbar" style="width: 0%"></div>
+            </div>
+            <button class="btn btn-danger" id="stopButton">Stop</button>
+        </div>
+
+    </div>
+
+    <script src="/bootstrap.min.js"></script>
+    <script src="/jquery-3.6.0.slim.min.js"></script>
+    <script src="/index.js"></script>
+</body>
+
+</html>
