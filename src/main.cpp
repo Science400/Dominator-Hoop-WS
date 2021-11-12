@@ -27,8 +27,8 @@
 // ----------------------------------------------------------------------------
 
 // WiFi credentials
-const char *WIFI_SSID = "HomeSweetModem";
-const char *WIFI_PASS = "silentwind943";
+const char *WIFI_SSID = "wifi-ssid";
+const char *WIFI_PASS = "wifi-password";
 
 // Stepper Motor
 const int MOTOR_STEP_PIN = 21;
